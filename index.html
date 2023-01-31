@@ -1,0 +1,57 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__city">
+                    <div class="city__content">
+                        <h1 class="city__name"></h1>
+                        <button class="city__location btn-reset">Мое местоположение</button>
+                    </div>
+                    <form action="#" method="get" class="search">
+                        <input type="text" class="search__input" placeholder="Введите город">
+                        <button type="submit" class="search__btn">ok</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="weather">
+                <div class="container weather__container">
+                    <div class="weather__inner">
+                        <div class="date"></div>
+                        <div class="weather__icon"></div>
+                        <h2 class="weather__temperature"></h2>
+                    </div>
+                    <p class="weather__description"></p>
+                    <div class="weather-info">
+                        <div class="indicators__item">
+                            <div class="indicators__title">ветер</div>
+                            <div id="wind" class="indicators__content"></div>
+                        </div>
+                        <div class="indicators__item">
+                            <div class="indicators__title">давление</div>
+                            <div id="pressure" class="indicators__content"></div>
+                        </div>
+                        <div class="indicators__item">
+                            <div class="indicators__title">влажность</div>
+                            <div id="humidity" class="indicators__content"></div>
+                        </div>
+                        <div class="indicators__item">
+                            <div class="indicators__title">облачность</div>
+                            <div id="cloudiness" class="indicators__content"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
